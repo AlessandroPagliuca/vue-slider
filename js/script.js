@@ -59,13 +59,14 @@ createApp({
         }, 3000)
       },
     methods: {
-       nextSlide(){
-        this.currentImg++;
-        
-       }, 
-       prevSlide(){
-        this.currentImg--;
-        
-       }   
+        nextSlide() {
+            this.currentImg = (this.currentImg + 1) % this.images.length;
+          },
+          prevSlide() {
+            this.currentImg = (this.currentImg + this.images.length - 1) % this.images.length;
+          },
+       selectSlide(index) {
+        this.currentImg = index;
+      },   
     }
 }).mount('#app');
