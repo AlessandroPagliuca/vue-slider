@@ -12,19 +12,19 @@
 <body>
     
     <div id="app">
-        <div :class="wrapper">
-            <div :class="container">
-                <div :class="boxleft">
-                    <img :src="images[currentImg].image" alt="">
+        <div class="c92Wrapper bg-dark d-flex">
+            <div class="c92Box c92mAuto c92BorderRadius d-flex">
+                <div class="c92BoxLeft c92BorderRadiusLeft ">
+                    <img :src="images[currentImg].image" alt="" id="slide">
                     
                 </div>
     
-                <div :class="boxright">
-                    <button :class="btnUp">
-                        <i :class="iconUp"></i>
+                <div class="c92BoxRight c92BorderRadiusRight ">
+                    <button class="c92Btn c92BtnTop btn btn-outline-warning">
+                        <i class="fa-solid fa-arrow-up"></i>
                     </button>
-                    <button :class="btnDown">
-                        <i :class="iconDown"></i>
+                    <button class="c92Btn c92BtnBot btn btn-outline-warning" :class="nextSlide">
+                        <i class="fa-solid fa-arrow-down"></i>
                     </button>
                 </div>
             </div>
