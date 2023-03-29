@@ -15,7 +15,8 @@
         <div class="c92Wrapper bg-dark d-flex">
             <div class="c92Box c92mAuto c92BorderRadius d-flex">
                 <div class="c92BoxLeft c92BorderRadiusLeft ">
-                    <img :src="images[currentImg].image" :alt="images[currentImg].title">    
+                    <img :src="images[currentImg].image" :alt="images[currentImg].title">  
+                    <h3 class="c92Title">{{ images[currentImg].title }}</h3>  
                 </div>
     
                 <div class="c92BoxRight c92BorderRadiusRight ">
@@ -26,7 +27,7 @@
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
                     <div v-for="(image, index) in images" :key="index">
-                        <img :src="image.image"  @click="selectSlide(index)" :class="{ c92mainThumbnails: currentImg === index , c92thumbnails: currentImg !== index }" alt="">     
+                        <img :src="image.image"  @click="selectSlide(index)" :class="{ c92mainThumbnails: currentImg === index , c92thumbnails: currentImg !== index }" :alt="image.title">     
                     </div>
                 </div>
             </div>

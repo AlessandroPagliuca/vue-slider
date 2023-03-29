@@ -35,6 +35,19 @@
     height: 100%;
 }
 
+.c92Title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .c92Btn{
     position: absolute;
     z-index: 1000;
