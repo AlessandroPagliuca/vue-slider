@@ -1,0 +1,78 @@
+.c92Wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.c92mAuto{
+    margin: auto;
+}
+.c92BorderRadius{
+    border-radius: 5px;
+
+}
+.c92BorderRadiusLeft{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c92BorderRadiusRight{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.c92Box{
+    width: 900px;
+    height:500px;
+    box-shadow: 0rem 0rem 1rem gold;
+}
+.c92BoxLeft{
+    width: 750px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.c92BoxLeft img{
+    width: 100%;
+    height: 100%;
+}
+
+.c92Btn{
+    position: absolute;
+    z-index: 1000;
+    left: 40%;
+}
+.c92BtnTop{
+    margin-top: 5px;
+    top: 0;
+}
+.c92BtnBot{
+    margin-bottom: 5px;
+    bottom: 0;
+}
+
+.c92BoxRight{
+    width: 150px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+.c92BoxRight img{
+    width: 100%;
+    height: 100px;
+}
+.debug{
+    border: 1px solid black;
+}
+.c92BorderC{
+    border: 1px solid white;
+}
+
+.c92thumbnails{
+    filter: brightness(0.4);
+}
+.c92mainThumbnails{
+    filter: brightness(1)!important;
+    border: 2px solid white;
+    box-shadow: 0rem 0rem 2rem white;
+
+}
