@@ -13,7 +13,7 @@
     
     <div id="app">
         <div class="c92Wrapper bg-dark d-flex">
-            <div class="c92Box c92mAuto c92BorderRadius d-flex">
+            <div class="c92Box c92mAuto c92BorderRadius d-flex" @mouseover="handleMouseOver" @mouseout="startInterval">
                 <div class="c92BoxLeft c92BorderRadiusLeft ">
                     <img :src="images[currentImg].image" :alt="images[currentImg].title">  
                     <h3 class="c92Title">{{ images[currentImg].title }}</h3>  

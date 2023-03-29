@@ -56,19 +56,25 @@ createApp({
         }
     },
     mounted() {
-        setInterval(() => {
-          this.currentImg = (this.currentImg + 1) % this.images.length;
-        }, 3000)
+       this.startInterval();
       },
     methods: {
-        nextSlide() {
+        nextSlide(){
             this.currentImg = (this.currentImg + 1) % this.images.length;
           },
-          prevSlide() {
+          prevSlide(){
             this.currentImg = (this.currentImg + this.images.length - 1) % this.images.length;
           },
-       selectSlide(index) {
+       selectSlide(index){
         this.currentImg = index;
-      },   
+      }, 
+      handleMouseOver(){
+        clearInterval(this.setInterval);
+      },
+      startInterval(){
+        this.setInterval = setInterval(() => {
+            this.currentImg = (this.currentImg + 1) % this.images.length;
+          }, 3000);
+      }
     }
 }).mount('#app');
