@@ -25,8 +25,8 @@
                     <button class="c92Btn c92BtnBot btn btn-outline-warning" @click="nextSlide">
                         <i class="fa-solid fa-arrow-down"></i>
                     </button>
-                    <div class="c92thumbnails" v-for="(image, index) in images" :key="index">
-                        <img :src="image.image"  @click="selectSlide(index)" :class="{ active: currentImg === index }" alt="">     
+                    <div v-for="(image, index) in images" :key="index">
+                        <img :src="image.image"  @click="selectSlide(index)" :class="{ c92mainThumbnails: currentImg === index , c92thumbnails: currentImg !== index }" alt="">     
                     </div>
                 </div>
             </div>
